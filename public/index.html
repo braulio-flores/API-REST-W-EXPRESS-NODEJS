@@ -8,9 +8,18 @@
 </head>
 <body>
     <h1>Este es un formulario basico de ejemplo</h1>
-    <form >
+    <form action="/guardar" method="POST">
         <label for="inputname">Nombre</label>
-        <input type="text" name="inputname" id="inputname">
+        <input type="text" name="inputname" id="inputname" placeholder="Nombre"><br><br>
+        <label for="inputape">Apellido</label>
+        <input type="text" name="inputape" id="inputape" placeholder="Apellido"><br><br>
+        <label for="inputdate">Fecha de Nacimiento</label>
+        <input type="date" name="inputdate" id="inputname" ><br><br>
+        <label for="inputpais">Fecha de Nacimiento</label>
+        <select name="inputpais" id="inputpais" >
+            <option value="Mexico">Mexico</option>
+            <option value="EUA">EUA</option>
+        </select><br><br>
         <button type="submit">Enviar</button>
     </form>
 </body>
